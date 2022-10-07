@@ -5,6 +5,7 @@ const router = express.Router()
 const PATH_ROUTES = __dirname;
 
 const removeExtension = (fileName) => {
+    /* archivo.jpg =  ['archivo', 'jpg'] */
     return fileName.split('.').shift()
 }
 /* lee el directorio de manera asincrona y nos devuelve un array*/

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const TracksScheme = new mongoose.Schema(
     {
         name : {
-            type : Stryng,
+            type : String,
         },
         album : {
             type : String,
@@ -36,8 +36,8 @@ const TracksScheme = new mongoose.Schema(
             },
         },
         mediaId : {
-            type : mongoose.Types.ObjectId
-        }
+            type : mongoose.Types.ObjectId,
+        },
     },
     {
         timestamps : true,
